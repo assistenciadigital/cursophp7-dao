@@ -3,7 +3,8 @@
 require_once("class/config.php");
 
 // Carrega uma lista de usuarios
-$search = Usuario::search("jo");
+$lista = Usuario::getList();
 
-echo json_encode($search);
+echo json_encode($lista);
+
 ?>
