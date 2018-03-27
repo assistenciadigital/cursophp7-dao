@@ -2,9 +2,12 @@
 
 require_once("class/config.php");
 
-$aluno = new Usuario("aluno", "@lun0");
+// update
 
-$aluno -> insert();
+$usuario = new Usuario();
+$usuario -> loadByid(8);
+$usuario -> update("alterado", "888888");
 
-echo $aluno;
+echo $usuario;
+
 ?>
