@@ -7,10 +7,9 @@ require_once("class/config.php");
 
 //echo json_encode($usuarios);
 
-// Carrega somente um usuario
 $root = new Usuario();
 
-$root -> loadbyid(5);
+$root -> loadbyid(4);
 
 echo $root;
 
